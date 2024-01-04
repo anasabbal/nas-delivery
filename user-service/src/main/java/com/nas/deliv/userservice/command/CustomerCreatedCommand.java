@@ -1,6 +1,7 @@
 package com.nas.deliv.userservice.command;
 
 
+import com.nas.deliv.userservice.enums.ClientType;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,4 +13,5 @@ public class CustomerCreatedCommand {
     private String phoneNumber;
     private String email;
     private String password;
+    private ClientType clientType;
 }
