@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40fc95f3-d5f4-4ff0-a2e9-8a7694b3ec56" name="Changes" comment="begin confirmation token for email registration">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/models/ConfirmationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/models/ConfirmationToken.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/repository/ConfirmationTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/repository/ConfirmationTokenRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/customer/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
@@ -178,7 +173,7 @@
       <workItem from="1704374264537" duration="4710000" />
       <workItem from="1704472050831" duration="702000" />
       <workItem from="1704473785263" duration="3360000" />
-      <workItem from="1704726000115" duration="6860000" />
+      <workItem from="1704726000115" duration="7687000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -220,7 +215,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704732750178</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="begin confirmation token for email registration">
+      <option name="closed" value="true" />
+      <created>1704734535572</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704734535572</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -12,6 +12,7 @@ import exception.BusinessException;
 import exception.ExceptionPayloadFactory;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Service;
 import util.JSONUtil;
@@ -24,6 +25,9 @@ public class CustomerServiceImpl implements CustomerService{
     private final CustomerRepository customerRepository;
     private final ConfirmationTokenRepository confirmationTokenRepository;
     private final EmailService emailService;
+
+    @Value("${path.app}")
+    private String pathApp;
 
     @Override
     public String create(CustomerCreatedCommand command) {
@@ -55,7 +59,7 @@ public class CustomerServiceImpl implements CustomerService{
         mailMessage.setTo(accountInformation.getEmail());
         mailMessage.setSubject("Complete Registration!");
         mailMessage.setText("To confirm your account, please click here : "
-                +"http://localhost:8080/v1/auth/confirm-account?token="+confirmationToken.getConfirmationToken());
+                + pathApp + "confirm-account?token="+confirmationToken.getConfirmationToken());
         emailService.sendEmail(mailMessage);
     }
     @Override
