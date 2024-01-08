@@ -55,7 +55,7 @@ public class CustomerServiceImpl implements CustomerService{
         mailMessage.setTo(accountInformation.getEmail());
         mailMessage.setSubject("Complete Registration!");
         mailMessage.setText("To confirm your account, please click here : "
-                +"http://localhost:8085/confirm-account?token="+confirmationToken.getConfirmationToken());
+                +"http://localhost:8080/v1/auth/confirm-account?token="+confirmationToken.getConfirmationToken());
         emailService.sendEmail(mailMessage);
     }
     @Override

@@ -8,7 +8,7 @@ spring:
           auth: 'true'
     host: smtp.gmail.com
     username: ${SMTP_EMAIL}
-    password: ${SMTP_PAAS}
+    password: ${SMTP_PASS}
     port: '587'
 
   jpa:
