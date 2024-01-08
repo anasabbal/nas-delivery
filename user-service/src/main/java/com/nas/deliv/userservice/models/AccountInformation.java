@@ -2,10 +2,13 @@ package com.nas.deliv.userservice.models;
 
 import com.nas.deliv.userservice.command.CustomerCreatedCommand;
 import jakarta.persistence.Entity;
+import lombok.Getter;
 import shared.BaseEntity;
 
 
 
+
+@Getter
 @Entity
 public class AccountInformation extends BaseEntity {
     private String firstName;

@@ -1,4 +1,16 @@
 spring:
+  mail:
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+          auth: 'true'
+    host: smtp.gmail.com
+    username: ${SMTP_EMAIL}
+    password: ${SMTP_PAAS}
+    port: '587'
+
   jpa:
     properties:
       hibernate:

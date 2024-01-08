@@ -2,7 +2,7 @@ package com.nas.deliv.userservice.controller;
 
 
 import com.nas.deliv.userservice.models.AccountInformation;
-import com.nas.deliv.userservice.service.CustomerService;
+import com.nas.deliv.userservice.service.customer.CustomerService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

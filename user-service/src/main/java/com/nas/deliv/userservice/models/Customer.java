@@ -22,6 +22,9 @@ public class Customer  extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private ClientType clientType;
 
+    @Column(name = "IS_ENABLE")
+    private boolean isEnabled;
+
 
     public static Customer createAndSave(final AccountInformation accountInformation, ClientType clientType){
         final Customer customer = new Customer();

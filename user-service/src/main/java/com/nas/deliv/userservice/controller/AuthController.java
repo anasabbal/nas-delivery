@@ -2,19 +2,13 @@ package com.nas.deliv.userservice.controller;
 
 
 import com.nas.deliv.userservice.command.CustomerCreatedCommand;
-import com.nas.deliv.userservice.models.Customer;
-import com.nas.deliv.userservice.service.CustomerService;
+import com.nas.deliv.userservice.service.customer.CustomerService;
+import com.nas.deliv.userservice.service.token.ConfirmationTokenService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-import java.net.URI;
+import org.springframework.web.bind.annotation.*;
 
 import static constants.ResourcePaths.*;
-import static org.springframework.web.servlet.support.ServletUriComponentsBuilder.fromCurrentRequest;
 
 
 @RestController
@@ -23,12 +17,18 @@ import static org.springframework.web.servlet.support.ServletUriComponentsBuilde
 public class AuthController {
 
     private final CustomerService customerService;
+    private final ConfirmationTokenService confirmationTokenService;
 
     @PostMapping(REGISTER)
     public ResponseEntity<String> register(@RequestBody CustomerCreatedCommand command){
-        final Customer customer = customerService.create(command);
-        final URI uri = fromCurrentRequest().path("/{id}").buildAndExpand(customer.getId()).toUri();
-        return ResponseEntity.ok(uri.toString());
+        final String str = customerService.create(command);
+        return ResponseEntity.ok(str);
+    }
+
+    @RequestMapping(value="/confirm-account", method= {RequestMethod.GET, RequestMethod.POST})
+    public ResponseEntity<?> confirmUserAccount(@RequestParam("token")String confirmationToken) {
+        confirmationTokenService.confirmEmail(confirmationToken);
+        return ResponseEntity.ok("Email verified successfully!");
     }
 
 }
