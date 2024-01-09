@@ -30,5 +30,4 @@ public class AuthController {
         confirmationTokenService.confirmEmail(confirmationToken);
         return ResponseEntity.ok("Email verified successfully!");
     }
-
 }

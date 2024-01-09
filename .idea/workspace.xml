@@ -5,6 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40fc95f3-d5f4-4ff0-a2e9-8a7694b3ec56" name="Changes" comment="begin confirmation token for email registration">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/BrandServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/command/CompanyCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/config/ProducerKafkaConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/controller/CompanyController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/enums/CompanyType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/models/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/repository/CompanyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/CompanyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/CompanyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/brand-service/src/test/java/com/nas/deliv/brandservice/BrandServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/models/ProductType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/config/JavConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/dto/AccountInformationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/dto/BaseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/dto/CustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/dto/mapper/AccountInformationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/dto/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/account/AccountInformationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/account/AccountInformationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/com/nas/deliv/userservice/controller/AuthControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/com/nas/deliv/userservice/controller/CustomerControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/com/nas/deliv/userservice/repository/CustomerRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/com/nas/deliv/userservice/service/CustomerServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-core/src/main/java/constants/ResourcePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-core/src/main/java/constants/ResourcePaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/enums/ClientType.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/enums/ClientType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/models/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/customer/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
@@ -16,6 +59,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -42,12 +86,16 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "HTTP Request.generated-requests | #6.executor": "Run",
+    "JUnit.AuthControllerTest.testRegisterEndpoint.executor": "Run",
+    "JUnit.CustomerServiceImplTest.testCreateCustomerWithExistingEmail.executor": "Run",
+    "JUnit.CustomerServiceImplTest.testCreateNewCustomer.executor": "Run",
     "Maven.Unknown [clean].executor": "Run",
     "Maven.eureka-server [org.springframework.boot:spring-boot-maven-plugin:3.2.1:run].executor": "Run",
     "Maven.nas-delivery [clean,install].executor": "Run",
     "Maven.nas-delivery [clean].executor": "Run",
     "Maven.token-service [clean,install].executor": "Run",
     "Maven.user-service [clean,install].executor": "Run",
+    "Maven.user-service [clean].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -68,6 +116,11 @@
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "spring.boot",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RunDashboard">
@@ -79,13 +132,68 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+  <component name="RunManager" selected="JUnit.AuthControllerTest.testRegisterEndpoint">
     <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="AuthControllerTest.testRegisterEndpoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nas.deliv.userservice.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nas.deliv.userservice.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.nas.deliv.userservice.controller.AuthControllerTest" />
+      <option name="METHOD_NAME" value="testRegisterEndpoint" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceImplTest.testCreateCustomerWithExistingEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nas.deliv.userservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nas.deliv.userservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.nas.deliv.userservice.service.CustomerServiceImplTest" />
+      <option name="METHOD_NAME" value="testCreateCustomerWithExistingEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceImplTest.testCreateNewCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nas.deliv.userservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nas.deliv.userservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.nas.deliv.userservice.service.CustomerServiceImplTest" />
+      <option name="METHOD_NAME" value="testCreateNewCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="api-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.nas.deliv.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrandServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="brand-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nas.deliv.brandservice.BrandServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,6 +246,10 @@
     </configuration>
     <list>
       <item itemvalue="HTTP Request.generated-requests | #6" />
+      <item itemvalue="JUnit.AuthControllerTest.testRegisterEndpoint" />
+      <item itemvalue="JUnit.CustomerServiceImplTest.testCreateCustomerWithExistingEmail" />
+      <item itemvalue="JUnit.CustomerServiceImplTest.testCreateNewCustomer" />
+      <item itemvalue="Spring Boot.BrandServiceApplication" />
       <item itemvalue="Spring Boot.ApiGatewayApplication" />
       <item itemvalue="Spring Boot.ConfigServerApplication" />
       <item itemvalue="Spring Boot.EurekaServerApplication" />
@@ -148,6 +260,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AuthControllerTest.testRegisterEndpoint" />
+        <item itemvalue="JUnit.CustomerServiceImplTest.testCreateCustomerWithExistingEmail" />
+        <item itemvalue="JUnit.CustomerServiceImplTest.testCreateNewCustomer" />
         <item itemvalue="HTTP Request.generated-requests | #6" />
       </list>
     </recent_temporary>
@@ -173,7 +288,9 @@
       <workItem from="1704374264537" duration="4710000" />
       <workItem from="1704472050831" duration="702000" />
       <workItem from="1704473785263" duration="3360000" />
-      <workItem from="1704726000115" duration="7687000" />
+      <workItem from="1704726000115" duration="7876000" />
+      <workItem from="1704813633391" duration="1381000" />
+      <workItem from="1704816690204" duration="6232000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -223,7 +340,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704734535572</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="begin confirmation token for email registration">
+      <option name="closed" value="true" />
+      <created>1704735479751</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1704735479751</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

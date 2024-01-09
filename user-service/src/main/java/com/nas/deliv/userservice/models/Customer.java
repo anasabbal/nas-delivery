@@ -22,7 +22,7 @@ public class Customer  extends BaseEntity {
     @Enumerated(EnumType.STRING)
     private ClientType clientType;
 
-    @Column(name = "IS_ENABLE")
+    @Column(name = "IS_ENABLED")
     private boolean isEnabled;
 
 

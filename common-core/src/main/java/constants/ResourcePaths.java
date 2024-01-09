@@ -6,5 +6,6 @@ public class ResourcePaths {
     public static final String REGISTER = "/register";
     public static final String LOGIN = "/login";
     public static final String AUTH = "/auth";
+    public static final String COMPANY = "/company";
     public static final String ACCOUNT_INFORMATION = "account-information";
 }

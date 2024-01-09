@@ -25,7 +25,6 @@ public class CustomerServiceImpl implements CustomerService{
     private final CustomerRepository customerRepository;
     private final ConfirmationTokenRepository confirmationTokenRepository;
     private final EmailService emailService;
-
     @Value("${path.app}")
     private String pathApp;
 
