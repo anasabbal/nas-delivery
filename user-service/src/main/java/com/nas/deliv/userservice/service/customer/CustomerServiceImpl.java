@@ -46,23 +46,6 @@ public class CustomerServiceImpl implements CustomerService{
         }
         throw new BusinessException(ExceptionPayloadFactory.EMAIL_ALREADY_EXIST.get());
     }
-    private ConfirmationToken createConfirmationToken(Customer customer){
-        log.info("Begin creating confirmation token");
-        final ConfirmationToken confirmationToken = new ConfirmationToken(customer);
-        log.info("Confirmation token with token id {} created successfully !", confirmationToken.getTokenId());
-        confirmationTokenRepository.save(confirmationToken);
-
-        return confirmationToken;
-    }
-    private void sendEmail(Customer customer, ConfirmationToken confirmationToken){
-        SimpleMailMessage mailMessage = new SimpleMailMessage();
-        final AccountInformation accountInformation = customer.getAccountInformation();
-        mailMessage.setTo(accountInformation.getEmail());
-        mailMessage.setSubject("Complete Registration!");
-        mailMessage.setText("To confirm your account, please click here : "
-                + pathApp + "confirm-account?token="+confirmationToken.getConfirmationToken());
-        emailService.sendEmail(mailMessage);
-    }
     @Override
     public AccountInformation getFromCustomerId(String customerId){
         final Customer customer = findById(customerId);
@@ -82,6 +65,31 @@ public class CustomerServiceImpl implements CustomerService{
     public Page<Customer> getCustomers(Pageable pageable) {
         return customerRepository.findAllByDeletedFalse(pageable);
     }
+    private ConfirmationToken createConfirmationToken(Customer customer){
+        log.info("Begin creating confirmation token");
+        final ConfirmationToken confirmationToken = new ConfirmationToken(customer);
+        log.info("Confirmation token with token id {} created successfully !", confirmationToken.getTokenId());
+        confirmationTokenRepository.save(confirmationToken);
+
+        return confirmationToken;
+    }
+    private void sendEmail(Customer customer, ConfirmationToken confirmationToken){
+        SimpleMailMessage mailMessage = new SimpleMailMessage();
+        final AccountInformation accountInformation = getAccountInformationFromCustomer(customer);
+        mailMessage.setTo(accountInformation.getEmail());
+        mailMessage.setSubject("Complete Registration!");
+        mailMessage.setText("To confirm your account, please click here : "
+                + pathApp + "confirm-account?token="+confirmationToken.getConfirmationToken());
+        emailService.sendEmail(mailMessage);
+    }
+
+    private AccountInformation getAccountInformationFromCustomer(Customer customer){
+        log.info("Begin fetching account information by customer");
+        final AccountInformation accountInformation = customer.getAccountInformation();
+        log.info("Account information payload {} fetched successfully", JSONUtil.toJSON(accountInformation));
+        return accountInformation;
+    }
+
 
     private boolean existByEmail(String email) {
         return customerRepository.existsCustomerByAccountInformation_Email(email);
