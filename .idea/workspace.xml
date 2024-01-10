@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40fc95f3-d5f4-4ff0-a2e9-8a7694b3ec56" name="Changes" comment="integrate kafka">
+    <list default="true" id="40fc95f3-d5f4-4ff0-a2e9-8a7694b3ec56" name="Changes" comment="refactor to clean code using logger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/config/ProducerKafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/config/ProducerKafkaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/customer/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/customer/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/nas/deliv/userservice/service/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/nas/deliv/userservice/service/CustomerServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,47 +39,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;HTTP Request.generated-requests | #6.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuthControllerTest.testRegisterEndpoint.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomerServiceImplTest.testCreateCustomerWithExistingEmail.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomerServiceImplTest.testCreateNewCustomer.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Unknown [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.eureka-server [org.springframework.boot:spring-boot-maven-plugin:3.2.1:run].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.nas-delivery [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.nas-delivery [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.token-service [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.user-service [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.user-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.TokenServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "HTTP Request.generated-requests | #6.executor": "Run",
+    "JUnit.AuthControllerTest.testRegisterEndpoint.executor": "Run",
+    "JUnit.CustomerServiceImplTest.testCreateCustomerWithExistingEmail.executor": "Run",
+    "JUnit.CustomerServiceImplTest.testCreateNewCustomer.executor": "Run",
+    "JUnit.CustomerServiceTest.executor": "Run",
+    "Maven.Unknown [clean].executor": "Run",
+    "Maven.eureka-server [org.springframework.boot:spring-boot-maven-plugin:3.2.1:run].executor": "Run",
+    "Maven.nas-delivery [clean,install].executor": "Run",
+    "Maven.nas-delivery [clean].executor": "Run",
+    "Maven.token-service [clean,install].executor": "Run",
+    "Maven.user-service [clean,install].executor": "Run",
+    "Maven.user-service [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.TokenServiceApplication.executor": "Run",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "jdk.selected.JAVA_MODULE": "18",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "spring.boot",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -93,7 +90,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AuthControllerTest.testRegisterEndpoint">
+  <component name="RunManager" selected="JUnit.CustomerServiceTest">
     <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -141,6 +138,21 @@
       <option name="MAIN_CLASS_NAME" value="com.nas.deliv.userservice.service.CustomerServiceImplTest" />
       <option name="METHOD_NAME" value="testCreateNewCustomer" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nas.deliv.userservice.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nas.deliv.userservice.service" />
+      <option name="MAIN_CLASS_NAME" value="com.nas.deliv.userservice.service.CustomerServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -207,6 +219,7 @@
     </configuration>
     <list>
       <item itemvalue="HTTP Request.generated-requests | #6" />
+      <item itemvalue="JUnit.CustomerServiceTest" />
       <item itemvalue="JUnit.AuthControllerTest.testRegisterEndpoint" />
       <item itemvalue="JUnit.CustomerServiceImplTest.testCreateCustomerWithExistingEmail" />
       <item itemvalue="JUnit.CustomerServiceImplTest.testCreateNewCustomer" />
@@ -221,6 +234,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerServiceTest" />
         <item itemvalue="JUnit.AuthControllerTest.testRegisterEndpoint" />
         <item itemvalue="JUnit.CustomerServiceImplTest.testCreateCustomerWithExistingEmail" />
         <item itemvalue="JUnit.CustomerServiceImplTest.testCreateNewCustomer" />
@@ -252,7 +266,7 @@
       <workItem from="1704726000115" duration="7876000" />
       <workItem from="1704813633391" duration="1381000" />
       <workItem from="1704816690204" duration="6756000" />
-      <workItem from="1704906850720" duration="1411000" />
+      <workItem from="1704906850720" duration="2489000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -318,7 +332,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704823938112</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="integrate kafka">
+      <option name="closed" value="true" />
+      <created>1704908946876</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704908946876</updated>
+    </task>
+    <task id="LOCAL-00010" summary="refactor to clean code using logger">
+      <option name="closed" value="true" />
+      <created>1704909407370</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704909407370</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +360,8 @@
     <MESSAGE value="add more services" />
     <MESSAGE value="begin confirmation token for email registration" />
     <MESSAGE value="integrate kafka" />
-    <option name="LAST_COMMIT_MESSAGE" value="integrate kafka" />
+    <MESSAGE value="refactor to clean code using logger" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor to clean code using logger" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
