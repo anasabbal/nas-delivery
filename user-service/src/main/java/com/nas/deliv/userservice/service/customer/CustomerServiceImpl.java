@@ -13,6 +13,8 @@ import exception.ExceptionPayloadFactory;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.stereotype.Service;
 import util.JSONUtil;
@@ -75,6 +77,12 @@ public class CustomerServiceImpl implements CustomerService{
         log.info("Customer with id {} fetched successfully !", customerId);
         return customer;
     }
+
+    @Override
+    public Page<Customer> getCustomers(Pageable pageable) {
+        return customerRepository.findAllByDeletedFalse(pageable);
+    }
+
     private boolean existByEmail(String email) {
         return customerRepository.existsCustomerByAccountInformation_Email(email);
     }

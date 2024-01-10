@@ -7,6 +7,8 @@ import com.nas.deliv.userservice.models.AccountInformation;
 import com.nas.deliv.userservice.models.Customer;
 import com.nas.deliv.userservice.service.customer.CustomerService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,6 +25,12 @@ public class CustomerController {
     private final CustomerService customerService;
     private final CustomerMapper customerMapper;
 
+
+    @GetMapping
+    public ResponseEntity<Page<CustomerDto>> getCustomers(Pageable pageable){
+        final Page<Customer> customers = customerService.getCustomers(pageable);
+        return ResponseEntity.ok(customers.map(customerMapper::toCustomerDto));
+    }
     @GetMapping(ACCOUNT_INFORMATION + "/{customerId}")
     public ResponseEntity<AccountInformation> getAccountInformation(@PathVariable("customerId") final String customerId){
         final AccountInformation accountInformation = customerService.getFromCustomerId(customerId);
