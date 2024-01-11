@@ -1,21 +1,7 @@
 package com.nas.deliv.userservice.controller;
 
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.nas.deliv.userservice.command.CustomerCreatedCommand;
-import com.nas.deliv.userservice.service.customer.CustomerService;
-import com.nas.deliv.userservice.service.token.ConfirmationTokenService;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.http.MediaType;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
 
 @WebMvcTest(AuthController.class)
 public class AuthControllerTest {

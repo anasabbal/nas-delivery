@@ -27,6 +27,9 @@ public class Company extends BaseEntity {
     @Column(name = "COMPANY_TYPE")
     private CompanyType companyType;
 
+    @Column(name = "CEO")
+    private String ceo;
+
     public static Company create(final CompanyCommand companyCommand){
         final Company company = new Company();
 

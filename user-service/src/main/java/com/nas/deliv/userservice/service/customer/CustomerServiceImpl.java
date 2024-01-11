@@ -2,12 +2,15 @@ package com.nas.deliv.userservice.service.customer;
 
 
 import com.nas.deliv.userservice.command.CustomerCreatedCommand;
+import com.nas.deliv.userservice.enums.ClientType;
+import com.nas.deliv.userservice.event.request.CreateBrandRequest;
 import com.nas.deliv.userservice.models.AccountInformation;
 import com.nas.deliv.userservice.models.ConfirmationToken;
 import com.nas.deliv.userservice.models.Customer;
 import com.nas.deliv.userservice.repository.ConfirmationTokenRepository;
 import com.nas.deliv.userservice.repository.CustomerRepository;
 import com.nas.deliv.userservice.service.EmailService;
+import com.nas.deliv.userservice.service.feign.BrandFeignService;
 import exception.BusinessException;
 import exception.ExceptionPayloadFactory;
 import lombok.RequiredArgsConstructor;
@@ -24,9 +27,11 @@ import util.JSONUtil;
 @RequiredArgsConstructor
 public class CustomerServiceImpl implements CustomerService{
 
+    private final BrandFeignService brandFeignService;
     private final CustomerRepository customerRepository;
     private final ConfirmationTokenRepository confirmationTokenRepository;
     private final EmailService emailService;
+
     @Value("${path.app}")
     private String pathApp;
 
@@ -35,8 +40,17 @@ public class CustomerServiceImpl implements CustomerService{
         if(!existByEmail(command.getEmail())){
             log.info("Begin creating Account with payload {}", JSONUtil.toJSON(command));
             final Customer customer = Customer.create(command);
+
+            if(customer.getClientType() != ClientType.COMPANY){
+
+            }
             log.info("Customer with id {} created successfully !", customer.getId());
             customerRepository.save(customer);
+            final CreateBrandRequest createBrandRequest = CreateBrandRequest.create(
+                    customer.getAccountInformation().getFirstName(),
+                    null, customer.getId()
+            );
+            brandFeignService.createBrand(createBrandRequest);
 
             final ConfirmationToken confirmationToken = createConfirmationToken(customer);
 
@@ -84,10 +98,7 @@ public class CustomerServiceImpl implements CustomerService{
     }
 
     private AccountInformation getAccountInformationFromCustomer(Customer customer){
-        log.info("Begin fetching account information by customer");
-        final AccountInformation accountInformation = customer.getAccountInformation();
-        log.info("Account information payload {} fetched successfully", JSONUtil.toJSON(accountInformation));
-        return accountInformation;
+        return customer.getAccountInformation();
     }
 
 

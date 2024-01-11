@@ -10,4 +10,5 @@ import lombok.Setter;
 public class CompanyCommand {
     private String companyName;
     private CompanyType companyType;
+    private String customerId;
 }

@@ -4,8 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40fc95f3-d5f4-4ff0-a2e9-8a7694b3ec56" name="Changes" comment="refactor to clean code using logger">
+    <list default="true" id="40fc95f3-d5f4-4ff0-a2e9-8a7694b3ec56" name="Changes" comment="add some unit test for CustomerServiceTest">
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/event/request/CreateBrandRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/event/response/CompanyCreatedEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/feign/BrandFeignService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brand-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/BrandServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/BrandServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/command/CompanyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/command/CompanyCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/models/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/models/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/repository/CompanyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brand-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/dto/AccountInformationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/dto/AccountInformationDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/dto/BaseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/dto/BaseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/dto/CustomerDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/dto/CustomerDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/models/ConfirmationToken.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/models/ConfirmationToken.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/customer/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/nas/deliv/userservice/controller/AuthControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/nas/deliv/userservice/controller/AuthControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/test/java/com/nas/deliv/userservice/service/CustomerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/test/java/com/nas/deliv/userservice/service/CustomerServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +83,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BrandServiceApplication.executor": "Run",
     "Spring Boot.EurekaServerApplication.executor": "Run",
     "Spring Boot.TokenServiceApplication.executor": "Run",
     "Spring Boot.UserServiceApplication.executor": "Run",
@@ -90,7 +113,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerServiceTest">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -266,7 +289,9 @@
       <workItem from="1704726000115" duration="7876000" />
       <workItem from="1704813633391" duration="1381000" />
       <workItem from="1704816690204" duration="6756000" />
-      <workItem from="1704906850720" duration="2489000" />
+      <workItem from="1704906850720" duration="3897000" />
+      <workItem from="1704918589291" duration="1660000" />
+      <workItem from="1704980449009" duration="8905000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -348,7 +373,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704909407370</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add some unit test for CustomerServiceTest">
+      <option name="closed" value="true" />
+      <created>1704910215418</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704910215418</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add some unit test for CustomerServiceTest">
+      <option name="closed" value="true" />
+      <created>1704911679345</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704911679345</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +402,8 @@
     <MESSAGE value="begin confirmation token for email registration" />
     <MESSAGE value="integrate kafka" />
     <MESSAGE value="refactor to clean code using logger" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor to clean code using logger" />
+    <MESSAGE value="add some unit test for CustomerServiceTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some unit test for CustomerServiceTest" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
