@@ -9,6 +9,7 @@ import com.nas.deliv.userservice.models.Customer;
 import com.nas.deliv.userservice.service.account.AccountInformationService;
 import com.nas.deliv.userservice.service.customer.CustomerService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
@@ -27,16 +28,19 @@ public class CustomerController {
 
 
     @GetMapping
+    @Cacheable(value = "customers", key = "{#pageable.pageNumber, #pageable.pageSize}")
     public ResponseEntity<Page<CustomerDto>> getCustomers(Pageable pageable){
         final Page<Customer> customers = customerService.getCustomers(pageable);
         return ResponseEntity.ok(customers.map(customerMapper::toCustomerDto));
     }
     @GetMapping(ACCOUNT_INFORMATION + "/{customerId}")
+    @Cacheable(value = "accountInformation", key = "#customerId")
     public ResponseEntity<AccountInformation> getAccountInformation(@PathVariable("customerId") final String customerId){
         final AccountInformation accountInformation = customerService.getFromCustomerId(customerId);
         return ResponseEntity.ok(accountInformation);
     }
     @GetMapping("/{customerId}")
+    @Cacheable(value = "customer", key = "#customerId")
     public ResponseEntity<CustomerDto> getCustomerById(@PathVariable("customerId") final String customerId){
         final Customer customer = customerService.findById(customerId);
         return ResponseEntity.ok(customerMapper.toCustomerDto(customer));

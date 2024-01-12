@@ -2,7 +2,6 @@ package com.nas.deliv.userservice.service.customer;
 
 
 import com.nas.deliv.userservice.command.CustomerCreatedCommand;
-import com.nas.deliv.userservice.enums.ClientType;
 import com.nas.deliv.userservice.event.request.CreateBrandRequest;
 import com.nas.deliv.userservice.models.AccountInformation;
 import com.nas.deliv.userservice.models.ConfirmationToken;
@@ -16,6 +15,7 @@ import exception.ExceptionPayloadFactory;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.mail.SimpleMailMessage;
@@ -41,9 +41,6 @@ public class CustomerServiceImpl implements CustomerService{
             log.info("Begin creating Account with payload {}", JSONUtil.toJSON(command));
             final Customer customer = Customer.create(command);
 
-            if(customer.getClientType() != ClientType.COMPANY){
-
-            }
             log.info("Customer with id {} created successfully !", customer.getId());
             customerRepository.save(customer);
             final CreateBrandRequest createBrandRequest = CreateBrandRequest.create(

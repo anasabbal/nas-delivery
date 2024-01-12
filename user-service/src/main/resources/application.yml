@@ -35,6 +35,10 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 server:
   port: 8080
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: *
 path:
   app: http://localhost:8080/v1/auth/
