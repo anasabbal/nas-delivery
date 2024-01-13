@@ -7,6 +7,7 @@ import com.nas.deliv.productservice.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
+import util.JSONUtil;
 
 @Slf4j
 @Service
@@ -17,6 +18,9 @@ public class ProductServiceImpl implements ProductService{
 
     @Override
     public Product create(ProductCommand command) {
-        return null;
+        log.info("Begin creating product with payload {}", JSONUtil.toJSON(command));
+        final Product product = Product.create(command);
+        log.info("Product with id {} created successfully!", product.getId());
+        return productRepository.save(product);
     }
 }

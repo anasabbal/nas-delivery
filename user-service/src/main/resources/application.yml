@@ -1,34 +1,9 @@
 spring:
-  kafka:
-    bootstrap-servers: localhost:9092
-  mail:
-    properties:
-      mail:
-        smtp:
-          starttls:
-            enable: 'true'
-          auth: 'true'
-    host: smtp.gmail.com
-    username: ${SMTP_EMAIL}
-    password: ${SMTP_PASS}
-    port: '587'
-
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
-    hibernate:
-      ddl-auto: create-drop
-    show-sql: true
-  application:
-    name: customer
-  profiles:
-    active: default
-  datasource:
-    driverClassName: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/user-service
-    username: postgres
-    password: postgres
+  cloud:
+    config:
+      name: user-service
+  config:
+    import: optional:configserver:http://localhost:8888
 eureka:
   client:
     service-url:
@@ -38,3 +13,6 @@ server:
 
 path:
   app: http://localhost:8080/v1/auth/
+
+
+
