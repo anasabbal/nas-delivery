@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40fc95f3-d5f4-4ff0-a2e9-8a7694b3ec56" name="Changes" comment="add FeignClient">
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/config/CacheConfig.java" afterDir="false" />
+    <list default="true" id="40fc95f3-d5f4-4ff0-a2e9-8a7694b3ec56" name="Changes" comment="add FeignClient and implement caching">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/UserServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/config/JavConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/config/JavaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/controller/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/nas/deliv/userservice/service/customer/CustomerServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -276,7 +271,9 @@
       <workItem from="1704906850720" duration="3897000" />
       <workItem from="1704918589291" duration="1660000" />
       <workItem from="1704980449009" duration="9635000" />
-      <workItem from="1705072916942" duration="3096000" />
+      <workItem from="1705072916942" duration="3756000" />
+      <workItem from="1705102696833" duration="589000" />
+      <workItem from="1705169126882" duration="744000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -382,7 +379,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704991376665</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add FeignClient and implement caching">
+      <option name="closed" value="true" />
+      <created>1705076469580</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705076469580</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +402,8 @@
     <MESSAGE value="refactor to clean code using logger" />
     <MESSAGE value="add some unit test for CustomerServiceTest" />
     <MESSAGE value="add FeignClient" />
-    <option name="LAST_COMMIT_MESSAGE" value="add FeignClient" />
+    <MESSAGE value="add FeignClient and implement caching" />
+    <option name="LAST_COMMIT_MESSAGE" value="add FeignClient and implement caching" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
