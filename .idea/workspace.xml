@@ -4,36 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40fc95f3-d5f4-4ff0-a2e9-8a7694b3ec56" name="Changes" comment="add FeignClient and implement caching">
-      <change afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/feign/CategoryFeign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/feign/request/CategoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/feign/response/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/command/CategoryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/models/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/service/category/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/service/category/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brand-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/BrandServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/BrandServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/controller/CompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/repository/CompanyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/repository/CompanyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/CompanyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/CompanyServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/brand-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common-core/src/main/java/constants/ResourcePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-core/src/main/java/constants/ResourcePaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/java/com/nas/deliv/configserver/ConfigServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/java/com/nas/deliv/configserver/ConfigServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/service/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/service/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
-    </list>
+    <list default="true" id="40fc95f3-d5f4-4ff0-a2e9-8a7694b3ec56" name="Changes" comment="add FeignClient and implement caching" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,6 +63,7 @@
     "Maven.eureka-server [org.springframework.boot:spring-boot-maven-plugin:3.2.1:run].executor": "Run",
     "Maven.nas-delivery [clean,install].executor": "Run",
     "Maven.nas-delivery [clean].executor": "Run",
+    "Maven.product-service [clean,install].executor": "Run",
     "Maven.token-service [clean,install].executor": "Run",
     "Maven.user-service [clean,install].executor": "Run",
     "Maven.user-service [clean].executor": "Run",
@@ -315,7 +287,7 @@
       <workItem from="1704980449009" duration="9635000" />
       <workItem from="1705072916942" duration="3756000" />
       <workItem from="1705102696833" duration="589000" />
-      <workItem from="1705169126882" duration="9175000" />
+      <workItem from="1705169126882" duration="9329000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -453,7 +425,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705172679728</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add FeignClient and implement caching">
+      <option name="closed" value="true" />
+      <created>1705179319762</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1705179319762</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
