@@ -1,7 +1,7 @@
 package com.nas.deliv.productservice.models;
 
 import com.nas.deliv.productservice.command.ProductCommand;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.*;
 import shared.BaseEntity;
 
@@ -17,6 +17,10 @@ public class Product extends BaseEntity {
     private String productName;
     private String companyName;
     private Float price;
+
+
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private Category category;
 
     public static Product create(final ProductCommand command){
         final Product product = new Product();
