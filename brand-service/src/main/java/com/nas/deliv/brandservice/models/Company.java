@@ -3,14 +3,9 @@ package com.nas.deliv.brandservice.models;
 
 import com.nas.deliv.brandservice.command.CompanyCommand;
 import com.nas.deliv.brandservice.enums.CompanyType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
+import jakarta.persistence.*;
 import lombok.*;
 import shared.BaseEntity;
-
-
 
 
 @Entity

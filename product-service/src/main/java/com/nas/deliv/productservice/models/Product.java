@@ -14,8 +14,14 @@ import shared.BaseEntity;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor(access = AccessLevel.PROTECTED)
 public class Product extends BaseEntity {
+
+    @Column(name = "PRODUCT_NAME")
     private String productName;
+
+    @Column(name = "COMPANY_NAME")
     private String companyName;
+
+    @Column(name = "PRICE")
     private Float price;
 
 

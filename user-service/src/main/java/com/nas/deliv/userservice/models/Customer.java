@@ -37,4 +37,7 @@ public class Customer  extends BaseEntity {
         final AccountInformation accountInformation = AccountInformation.create(command);
         return Customer.createAndSave(accountInformation, command.getClientType());
     }
+    public void delete(){
+        this.deleted = true;
+    }
 }

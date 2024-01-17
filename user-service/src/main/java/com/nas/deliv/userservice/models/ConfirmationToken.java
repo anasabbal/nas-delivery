@@ -1,10 +1,9 @@
 package com.nas.deliv.userservice.models;
 
-import jakarta.persistence.*;
-import lombok.*;
-
 import java.util.Date;
 import java.util.UUID;
+import jakarta.persistence.*;
+import lombok.*;
 
 
 @Getter
