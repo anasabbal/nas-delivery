@@ -1,7 +1,11 @@
 package com.nas.deliv.userservice.event.request;
 
 
+import com.nas.deliv.userservice.command.CustomerCreatedCommand;
+import com.nas.deliv.userservice.enums.ClientType;
+import jakarta.persistence.*;
 import lombok.*;
+
 
 @Getter
 @Setter

@@ -11,4 +11,5 @@ public interface CustomerService {
     Customer findById(String customerId);
     AccountInformation getFromCustomerId(String customerId);
     Page<Customer> getCustomers(Pageable pageable);
+    void deleteCustomerById(String customerId);
 }

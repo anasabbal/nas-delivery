@@ -1,7 +1,6 @@
 package com.nas.deliv.brandservice.service.feign;
 
 
-import com.nas.deliv.brandservice.models.Company;
 import com.nas.deliv.brandservice.service.feign.request.CategoryCommand;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;

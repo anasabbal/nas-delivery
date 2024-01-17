@@ -51,4 +51,9 @@ public class CustomerController {
         final AccountInformation accountInformation = accountInformationService.update(customerId, command);
         return ResponseEntity.ok(accountInformation);
     }
+    @DeleteMapping("{customerId}")
+    public ResponseEntity<Void> deleteById(@PathVariable("customerId") final String customerId){
+        customerService.deleteCustomerById(customerId);
+        return ResponseEntity.noContent().build();
+    }
 }

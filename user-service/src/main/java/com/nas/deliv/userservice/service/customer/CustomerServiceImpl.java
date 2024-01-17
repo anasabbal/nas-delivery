@@ -93,6 +93,13 @@ public class CustomerServiceImpl implements CustomerService{
         emailService.sendEmail(mailMessage);
     }
 
+    @Override
+    public void deleteCustomerById(String customerId) {
+        final Customer customer = findById(customerId);
+        customer.delete();
+        customerRepository.save(customer);
+    }
+
     private AccountInformation getAccountInformationFromCustomer(Customer customer){
         return customer.getAccountInformation();
     }
