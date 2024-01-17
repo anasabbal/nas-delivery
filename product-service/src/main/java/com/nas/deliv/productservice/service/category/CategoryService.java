@@ -6,4 +6,6 @@ import com.nas.deliv.productservice.models.Category;
 public interface CategoryService {
 
     Category create(final CategoryCommand command);
+    Category findByCompanyId(String companyId);
+
 }
