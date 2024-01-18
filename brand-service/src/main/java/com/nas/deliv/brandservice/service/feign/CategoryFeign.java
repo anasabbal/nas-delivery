@@ -10,5 +10,5 @@ import org.springframework.web.bind.annotation.RequestBody;
 @FeignClient(url = "http://localhost:8090/v1/category", name = "product")
 public interface CategoryFeign {
     @PostMapping
-    public ResponseEntity<String> create(@RequestBody final CategoryCommand categoryCommand);
+    public ResponseEntity<String> createCategory(@RequestBody final CategoryCommand categoryCommand);
 }

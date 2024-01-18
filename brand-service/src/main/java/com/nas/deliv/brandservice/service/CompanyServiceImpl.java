@@ -37,7 +37,7 @@ public class CompanyServiceImpl implements CompanyService{
     @Override
     public String createCategory(CategoryCommand categoryCommand){
         if(isExistById(categoryCommand.getCompanyId())){
-            categoryFeign.create(categoryCommand);
+            categoryFeign.createCategory(categoryCommand);
             return "Category created successfully";
         }
         throw new RuntimeException("not Created");
