@@ -7,10 +7,7 @@ import com.nas.deliv.brandservice.service.CompanyService;
 import com.nas.deliv.brandservice.service.feign.request.CategoryCommand;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import static constants.ResourcePaths.COMPANY;
 import static constants.ResourcePaths.V1;
@@ -31,5 +28,9 @@ public class CompanyController {
     @PostMapping("/category")
     public ResponseEntity<String> createCategory(@RequestBody CategoryCommand categoryCommand){
         return ResponseEntity.ok(companyService.createCategory(categoryCommand));
+    }
+    @GetMapping("/{companyId}")
+    public ResponseEntity<Company> findById(@PathVariable("companyId") final String companyId){
+        return ResponseEntity.ok(companyService.findById(companyId));
     }
 }

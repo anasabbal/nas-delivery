@@ -45,8 +45,11 @@ public class CompanyServiceImpl implements CompanyService{
     private boolean isExistById(String companyId){
         return companyRepository.existsById(companyId);
     }
+    @Override
     public Company findById(String companyId){
-        return companyRepository.findById(companyId).get();
+        return companyRepository.findById(companyId).orElseThrow(
+                () -> new BusinessException(ExceptionPayloadFactory.COMPANY_WITH_ID_NOT_FOUND.get())
+        );
     }
     private boolean isExistByCeo(String ceo){
         return companyRepository.existsByCeo(ceo);

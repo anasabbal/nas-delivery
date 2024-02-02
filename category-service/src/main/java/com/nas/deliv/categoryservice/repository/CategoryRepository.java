@@ -1,6 +1,6 @@
-package com.nas.deliv.productservice.repository;
+package com.nas.deliv.categoryservice.repository;
 
-import com.nas.deliv.productservice.models.Category;
+import com.nas.deliv.categoryservice.models.Category;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

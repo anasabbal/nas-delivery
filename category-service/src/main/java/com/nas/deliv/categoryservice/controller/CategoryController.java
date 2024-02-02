@@ -1,11 +1,10 @@
-package com.nas.deliv.productservice.controller;
+package com.nas.deliv.categoryservice.controller;
 
-
-import com.nas.deliv.productservice.command.CategoryCommand;
-import com.nas.deliv.productservice.dto.CategoryDto;
-import com.nas.deliv.productservice.dto.mapper.CategoryMapper;
-import com.nas.deliv.productservice.models.Category;
-import com.nas.deliv.productservice.service.category.CategoryService;
+import com.nas.deliv.categoryservice.command.CategoryCommand;
+import com.nas.deliv.categoryservice.dto.CategoryDto;
+import com.nas.deliv.categoryservice.dto.mapper.CategoryMapper;
+import com.nas.deliv.categoryservice.models.Category;
+import com.nas.deliv.categoryservice.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,15 +12,15 @@ import org.springframework.web.bind.annotation.*;
 import static constants.ResourcePaths.CATEGORY;
 import static constants.ResourcePaths.V1;
 
+
 @RestController
 @RequestMapping(V1 + CATEGORY)
 @RequiredArgsConstructor
 public class CategoryController {
 
+
     private final CategoryService categoryService;
     private final CategoryMapper categoryMapper;
-
-
 
     @GetMapping("/{companyId}")
     public ResponseEntity<CategoryDto> findByCompanyId(@PathVariable("companyId") final String companyId){
@@ -30,7 +29,7 @@ public class CategoryController {
     }
     @PostMapping
     public ResponseEntity<String> create(@RequestBody final CategoryCommand categoryCommand){
-        final Category category = categoryService.create(categoryCommand);
-        return ResponseEntity.ok("Created !!!!!!!");
+        categoryService.create(categoryCommand);
+        return ResponseEntity.ok("Created successfully!");
     }
 }

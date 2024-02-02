@@ -25,9 +25,6 @@ public class Product extends BaseEntity {
     private Float price;
 
 
-    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    private Category category;
-
     public static Product create(final ProductCommand command){
         final Product product = new Product();
 

@@ -1,5 +1,4 @@
-package com.nas.deliv.productservice.dto;
-
+package com.nas.deliv.categoryservice.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,6 +15,6 @@ import java.util.Set;
 public class CategoryDto extends BaseDto {
 
     private String categoryName;
-    private Set<ProductDto> products;
+    private Set<String> products;
     private String companyId;
 }

@@ -4,7 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40fc95f3-d5f4-4ff0-a2e9-8a7694b3ec56" name="Changes" comment="complete some REST_API" />
+    <list default="true" id="40fc95f3-d5f4-4ff0-a2e9-8a7694b3ec56" name="Changes" comment="complete some REST_API">
+      <change afterPath="$PROJECT_DIR$/category-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/com/nas/deliv/categoryservice/CategoryServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/com/nas/deliv/categoryservice/command/CategoryCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/com/nas/deliv/categoryservice/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/com/nas/deliv/categoryservice/dto/CategoryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/com/nas/deliv/categoryservice/dto/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/com/nas/deliv/categoryservice/feign/CategoryFeignCompany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/com/nas/deliv/categoryservice/feign/response/CompanyFeignResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/com/nas/deliv/categoryservice/models/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/com/nas/deliv/categoryservice/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/com/nas/deliv/categoryservice/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/java/com/nas/deliv/categoryservice/service/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/category-service/src/test/java/com/nas/deliv/categoryservice/CategoryServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/controller/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/CompanyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/brand-service/src/main/java/com/nas/deliv/brandservice/service/CompanyServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common-core/src/main/java/exception/ExceptionPayloadFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/common-core/src/main/java/exception/ExceptionPayloadFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification-service/src/main/java/com/nas/deliv/notificationservice/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification-service/src/main/java/com/nas/deliv/notificationservice/NotificationServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/command/CategoryCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/controller/CategoryController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/dto/CategoryDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/dto/mapper/CategoryMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/models/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/repository/CategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/service/category/CategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/service/category/CategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/service/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/service/product/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/service/product/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/nas/deliv/productservice/service/product/ProductServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,52 +93,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;HTTP Request.generated-requests | #6.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AuthControllerTest.testRegisterEndpoint.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomerServiceImplTest.testCreateCustomerWithExistingEmail.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomerServiceImplTest.testCreateNewCustomer.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.CustomerServiceTest.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Unknown [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.eureka-server [org.springframework.boot:spring-boot-maven-plugin:3.2.1:run].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.nas-delivery [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.nas-delivery [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.product-service [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.token-service [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.user-service [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.user-service [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.BrandServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ConfigServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProductServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.TokenServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;spring.boot&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "HTTP Request.generated-requests | #6.executor": "Run",
+    "JUnit.AuthControllerTest.testRegisterEndpoint.executor": "Run",
+    "JUnit.CustomerServiceImplTest.testCreateCustomerWithExistingEmail.executor": "Run",
+    "JUnit.CustomerServiceImplTest.testCreateNewCustomer.executor": "Run",
+    "JUnit.CustomerServiceTest.executor": "Run",
+    "Maven.Unknown [clean].executor": "Run",
+    "Maven.eureka-server [org.springframework.boot:spring-boot-maven-plugin:3.2.1:run].executor": "Run",
+    "Maven.nas-delivery [clean,install].executor": "Run",
+    "Maven.nas-delivery [clean].executor": "Run",
+    "Maven.product-service [clean,install].executor": "Run",
+    "Maven.token-service [clean,install].executor": "Run",
+    "Maven.user-service [clean,install].executor": "Run",
+    "Maven.user-service [clean].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.BrandServiceApplication.executor": "Run",
+    "Spring Boot.ConfigServerApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.ProductServiceApplication.executor": "Run",
+    "Spring Boot.TokenServiceApplication.executor": "Run",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "jdk.selected.JAVA_MODULE": "graalvm-21",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "spring.boot",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -261,7 +306,9 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
+        <option value="jdk-17.0.8-graalvm-ce-17-3183f394aec4-dc4f45a6" />
         <option value="jdk-21.0.1-openjdk-21.0.1-3183f394aec4-abbd5a8d" />
+        <option value="jdk-21.0.2-graalvm-jdk-21.0.2-3183f394aec4-39381fa3" />
       </set>
     </attachedChunks>
   </component>
@@ -289,6 +336,8 @@
       <workItem from="1705102696833" duration="589000" />
       <workItem from="1705169126882" duration="9329000" />
       <workItem from="1705504809339" duration="3006000" />
+      <workItem from="1705596291764" duration="283000" />
+      <workItem from="1706891763875" duration="4852000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -450,7 +499,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705507628865</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="complete some REST_API">
+      <option name="closed" value="true" />
+      <created>1705596444098</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1705596444098</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

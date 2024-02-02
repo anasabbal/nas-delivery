@@ -1,29 +1,25 @@
-package com.nas.deliv.productservice.models;
+package com.nas.deliv.categoryservice.models;
 
-import com.nas.deliv.productservice.command.CategoryCommand;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import lombok.*;
+
+import com.nas.deliv.categoryservice.command.CategoryCommand;
+import jakarta.persistence.*;
 import shared.BaseEntity;
 
 import java.util.HashSet;
 import java.util.Set;
 
-
 @Entity
-@Getter
-@Setter
-@NoArgsConstructor(access = AccessLevel.PROTECTED)
-@AllArgsConstructor(access = AccessLevel.PROTECTED)
 public class Category extends BaseEntity {
 
     @Column(name = "CATEGORY_NAME")
     private String categoryName;
 
-    @OneToMany(mappedBy = "category")
-    private Set<Product> products;
+    @ElementCollection
+    @CollectionTable(name = "CATEGORY_PRODUCTS", joinColumns = @JoinColumn(name = "CATEGORY_ID"))
+    @Column(name = "PRODUCT_ID")
+    private Set<String> products;
 
+    @Column(name = "CATEGORY_NAME")
     private String companyId;
 
     public static Category create(CategoryCommand command) {

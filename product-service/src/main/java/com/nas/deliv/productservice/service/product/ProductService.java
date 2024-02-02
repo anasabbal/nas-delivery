@@ -7,5 +7,4 @@ import org.springframework.data.domain.Pageable;
 
 public interface ProductService {
     Product create(final ProductCommand command);
-    Page<Product> findAllByCategoryId(String categoryId, Pageable pageable);
 }

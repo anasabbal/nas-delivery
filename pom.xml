@@ -18,6 +18,7 @@
         <module>config-server</module>
         <module>user-service</module>
         <module>brand-service</module>
+        <module>category-service</module>
     </modules>
 
     <properties>

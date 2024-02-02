@@ -1,11 +1,12 @@
-package com.nas.deliv.productservice.dto.mapper;
+package com.nas.deliv.categoryservice.dto.mapper;
 
-
-import com.nas.deliv.productservice.dto.CategoryDto;
-import com.nas.deliv.productservice.models.Category;
+import com.nas.deliv.categoryservice.dto.CategoryDto;
+import com.nas.deliv.categoryservice.models.Category;
 import org.mapstruct.Mapper;
 
 import java.util.List;
+
+
 
 @Mapper(componentModel = "spring")
 public abstract class CategoryMapper {

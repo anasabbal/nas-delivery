@@ -25,9 +25,4 @@ public class ProductServiceImpl implements ProductService{
         log.info("Product with id {} created successfully!", product.getId());
         return productRepository.save(product);
     }
-
-    @Override
-    public Page<Product> findAllByCategoryId(String categoryId, Pageable pageable) {
-        return productRepository.findAllByCategoryId(categoryId, pageable);
-    }
 }

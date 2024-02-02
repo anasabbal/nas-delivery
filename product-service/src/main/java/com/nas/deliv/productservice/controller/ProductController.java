@@ -22,14 +22,6 @@ public class ProductController {
     private final ProductService productService;
     private final ProductMapper productMapper;
 
-
-
-    @GetMapping("/{categoryId}")
-    public ResponseEntity<Page<ProductDto>> findAllByCategoryId(@PathVariable("categoryId") String categoryId, Pageable pageable){
-        final Page<Product> products = productService.findAllByCategoryId(categoryId, pageable);
-        final Page<ProductDto> productDtos = products.map(productMapper::toDto);
-        return ResponseEntity.ok(productDtos);
-    }
     @PostMapping
     public ResponseEntity<Product> create(@RequestBody final ProductCommand productCommand){
         final Product product = productService.create(productCommand);
